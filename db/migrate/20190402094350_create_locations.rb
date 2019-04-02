@@ -1,0 +1,14 @@
+class CreateLocations < ActiveRecord::Migration[5.1]
+  def change
+    create_table :locations do |t|
+      t.string :uniqueId
+      t.string :placeId
+      t.float :lat
+      t.float :lng
+      t.string :address
+      t.string :name
+
+      t.timestamps
+    end
+  end
+end
